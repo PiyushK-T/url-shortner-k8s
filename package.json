@@ -1,0 +1,19 @@
+{
+  "name": "bitlyclone",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Piyush Devendra Kataktalware",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1",
+    "express-handlebars": "^8.0.2",
+    "mongodb": "^6.17.0",
+    "nanoid": "^5.1.5"
+  }
+}
