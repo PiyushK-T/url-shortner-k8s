@@ -1,3 +1,11 @@
-<h1>Short URL created!</h1>
-<p>Your short URL: <a href="{{shortUrl}}">{{shortUrl}}</a></p>
-<a href="/">Shorten another</a>
+<div class="result">
+    <h1>SHORT URL CREATED!</h1>
+    <p>YOUR SHORT URL </p>
+    <div class="url-row">
+        <a id="shortUrlLink" href="{{shortUrl}}" target="_blank" rel="noopener noreferrer">{{shortUrl}}</a>
+        <button id="copyBtn">COPY LINK</button>
+    </div>
+    <a href="/" class="back-btn">SHORTEN ANOTHER URL</a>
+    <p class="fyi-msg">*FYI You can save all your shortened links to your profile*</br> *Just <a href="/signup"><u>Sign up</u></a> or <a href="/login"><u>Log in</u></a> 
+    if you already have an account*</p>
+</div>

@@ -1,28 +1,30 @@
 <header>
   <nav class="navbar">
     <div class="logo">
-      <a href="/home"><img src="/public/images/logo_dark.png" alt="ServiceEasy Logo"></a>
+      <a href="/"><img src="" alt="URL Shortner"></a>
     </div>
     <ul class="nav-links">
 
       {{!-- if logged in --}}
-      {{#if user}}
+      {{!-- {{#if user}} --}}
       <li><a href="/dashboard">DASHBOARD</a></li>
       <li><a href="/logout">LOGOUT</a></li>
-      {{/if}}
+      {{!-- {{/if}} --}}
 
       {{!-- not logged in --}}
-      {{#unless user}}
-      {{#unless onLoginPage}}
+      {{!-- {{#unless user}} --}}
+      {{!-- {{#unless onLoginPage}} --}}
       <li><a href="/login">LOGIN</a></li>
-      {{/unless}}
+      {{!-- {{/unless}} --}}
 
-      {{#unless onSignupPage}}
-      <li><a href="/signup">SIGN UP</a></li>
-      {{/unless}}
-      {{/unless}}
-
+      {{!-- {{#unless onSignupPage}} --}}
+      {{!-- <div class="signupbutton"> --}}
+      {{!-- <li><a href="/signup">SIGN UP</a></li> --}}
+      <li><a href="/signup" class="signup-btn">SIGNUP</a></li>
+      {{!-- {{/unless}}
+      {{/unless}} --}}
+      {{!-- </div> --}}
     </ul>
   </nav>
-  <div id="user-data" data-user='{{{json user}}}'></div>
+  {{!-- <div id="user-data" data-user='{{{json user}}}'></div> --}}
 </header>

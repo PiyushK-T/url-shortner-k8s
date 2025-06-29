@@ -2,15 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Bitly Clone</title>
+  <title>URL Shortner</title>
+  <link rel="stylesheet" href="/public/css/main.css">
+  <link rel="stylesheet" href="/public/css/result.css" />
+  <link rel="stylesheet" href="/public/css/user.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
   {{> _header}}
   
-  {{{body}}}
-
+  <main>
+    {{{body}}}
+  </main>
   {{> _footer}}
 
+  <script type="module" src="/public/js/index.js"></script>
+  <script type="module" src="/public/js/copyLink.js"></script>
   <script type="module" src="/public/js/validateForm.js"></script>
+
 </body>
 </html>

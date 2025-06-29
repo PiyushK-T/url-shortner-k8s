@@ -11,8 +11,11 @@
         var longUrl = longUrlInput.val().trim();
         if(longUrl ===undefined || longUrl ==="" | longUrl=== null)
             throw "No link is provided";  
-        if (!/^https?:\/\//i.test(longUrl))
-          throw "URL must start with http:// or https://";
+        // if (!/^https?:\/\//i.test(longUrl))
+        //   throw "URL must start with http:// or https://";
+        if(longUrl.type !== 'url' || longUrl.value !== url)
+          throw "URL must be a valid URL";
+        // return input.checkValidity();
     }
 
     submitButton.click(function(event){

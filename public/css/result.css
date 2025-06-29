@@ -1,0 +1,90 @@
+.result {
+  background-color: #334155; /* Slate 700 */
+  width: 90%;
+  max-width: 700px;
+  margin: 200px auto 40px;
+  padding: 30px;
+  border-radius: 15px;
+  max-height: 330px;
+  height: 100%;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+  /* border: 1px solid #64748B; Slate 500 */
+}
+
+.result h1 {
+  display: block;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding-bottom: 2%;
+}
+
+.result p {
+  font-size: 18px;
+  color: #CBD5E1; /* Slate 300 */
+  margin-bottom: 10px;
+}
+
+.result .url-row{
+  padding-bottom: 20px;
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.result .url-row a{
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #475569; /* Slate 600 */
+    color: #F1F5F9;
+    /* margin-bottom: 20px; */
+    outline:none;
+    flex: 1;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.result .url-row button{
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  background-color: #0EA5E9; /* Primary Button */
+  color: #1F2937;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  flex-shrink: 0;
+}
+
+.result div button:hover {
+  background-color: #0284C7;
+}
+
+.result .back-btn{ 
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  clear: both;
+  text-decoration: none;
+  border-radius: 12px;
+  display: inline-block;
+  background-color: #F97316;
+  color: #1F2937;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.result .back-btn:hover {
+  background-color: #c05b12;
+}
+
+.result .fyi-msg{
+  margin-top: 15px;
+  text-align: center;
+  color: #fc7718;
+}
