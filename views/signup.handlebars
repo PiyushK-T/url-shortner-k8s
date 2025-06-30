@@ -1,0 +1,39 @@
+<h2 class="heading-secondary-signup">HELLO THERE!</h2>
+<div class="signup-form" id="signup-form">
+    {{#if errors}}
+    <div class="error-messages">
+        {{#each errors}}
+        <div class="error-message font-italic">{{this}}</div>
+        {{/each}}
+    </div>
+    {{/if}}
+
+    <div class="form-box">
+        <form class="form form--signup" action="/signup" method="POST">
+            <div class="form__group">
+                <label class="form__label" for="name">NAME</label>
+                <input class="form__input" id="name" name="name" type="string" placeholder="Example"
+                    required />
+            </div>
+            <div class="form__group">
+                <label class="form__label" for="email">E-MAIL</label>
+                <input class="form__input" id="email" name="email" type="email" placeholder="you@example.com"
+                    required />
+            </div>
+            <div class="form__group">
+                <label class="form__label" for="password">PASSWORD</label>
+                <input class="form__input" id="password" name="password" type="password" placeholder="••••••••"
+                    required minlength="8" />
+            </div>
+            <div class="form__group">
+                <label class="form__label" for="confirm_password">CONFIRM PASSWORD</label>
+                <input class="form__input" id="confirm_password" name="confirm_password" type="password" placeholder="••••••••"
+                    required minlength="8" />
+            </div>
+            <div class="form__group">
+                <button class="submit-button" type="submit">SIGN UP</button>
+            </div>
+            <p class="switch-link">Already have an account? <a href="/login">LOG IN</a></p>
+        </form>
+    </div>
+</div>

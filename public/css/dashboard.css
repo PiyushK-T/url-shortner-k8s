@@ -1,0 +1,128 @@
+.dashboard-container{
+    display: flex;
+    min-height: calc(100vh-80vh);
+}
+
+.sidebar{
+    padding: 2%;
+    margin-right: 5%;
+    width: 250px;
+    height:inherit;
+    background-color: #131a25;
+    color: #F1F5F9;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-title{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #F97316;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-link{
+    text-decoration: none;
+    color: #F1F5F9;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu-link.active,
+.menu-link.hover{
+    color: #0EA5E9;
+    font-weight: bold;
+}
+
+.logout{
+    color: #F97316;
+}
+
+/* FORM SECTION */
+.user-form {
+  background-color: #334155; /* Slate 700 */
+  width: 90%;
+  max-width: 700px;
+  margin: 100px 0 40px 350px;
+  padding: 30px;
+  border-radius: 15px;
+  /* max-height: 400px; */
+  height: 100%;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+  /* border: 1px solid #64748B; Slate 500 */
+}
+
+.user-form label {
+  display: block;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding-bottom: 2%;
+}
+
+.user-form p {
+  font-size: 18px;
+  color: #CBD5E1; /* Slate 300 */
+  margin-bottom: 10px;
+}
+
+.user-form input[type="url"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: #475569; /* Slate 600 */
+  color: #F1F5F9;
+  margin-bottom: 20px;
+  outline:none;
+}
+
+.user-form button {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  background-color: #0EA5E9; /* Primary Button */
+  color: #1F2937;
+  cursor: pointer;
+  float: right;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.user-form button:hover {
+  background-color: #0284C7;
+  color: #F1F5F9;
+}
+
+.link-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.link-table th,
+.link-table td{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #475569;
+}
+
+.link-table th{
+    background-color: #334155;
+}
+
+.link-table a{
+    color: #0EA5E9;
+}
+
+.link-table .copy-button{
+
+}

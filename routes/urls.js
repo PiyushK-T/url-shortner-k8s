@@ -5,7 +5,10 @@ import { nanoid } from 'nanoid';
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.render('home');
+  res.render('home',{
+        title:"Home",
+      cssPath:`/public/css/main.css`,
+  });
 });
 
 router.post('/shorten', async (req, res) => {

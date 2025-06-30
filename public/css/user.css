@@ -6,14 +6,85 @@
     padding-left: 30px;
     /* align-self: center; */
 }
+.heading-secondary-signup {
+    font-size: 32px;
+    font-weight: 300;
+    margin-top: 2%;
+    margin-left: 43%;
+    padding-left: 30px;
+    /* align-self: center; */
+}
 
-.login-form{
-background-color: #334155; /* Slate 700 */
+.login-form,
+.signup-form{
+  background-color: #334155; /* Slate 700 */
   width: 90%;
   max-width: 700px;
-  margin: 20px auto 40px;
+  margin: 5px auto 40px;
   padding: 30px;
   border-radius: 15px;
-  max-height: 270px;
   height: 100%;
+}
+
+.login-form{
+    max-height: 330px;
+}
+
+.signup-form{
+    max-height: 490px;
+}
+
+.form__label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: 2%;
+  color: #F1F5F9;
+}
+
+.form__input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background-color: #475569;
+  color: #F1F5F9;
+  font-size: 15px;
+  outline: none;
+}
+
+.submit-button {
+  width: 100%;
+  margin-top: 4%;
+  padding: 12px;
+  background-color: #0EA5E9;
+  border: none;
+  color: black;
+  font-family: 'Segoe UI', sans-serif;
+  /* font-weight: bold; */
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0284C7;
+  color: #F1F5F9;
+}
+
+.switch-link {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #CBD5E1;
+  text-align: center;
+}
+
+.switch-link a {
+  color: #0EA5E9;
+  text-decoration: none;
+}
+
+.switch-link a:hover {
+  color: #F1F5F9;
 }

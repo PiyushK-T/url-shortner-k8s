@@ -12,6 +12,12 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
+  /* background-image: url('/public/img/bg2.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed; */
 }
 
 main {
@@ -49,7 +55,8 @@ a {
 }
 
 .logo img {
-  height: 40px;
+  height: 90px;
+  margin-top: 2%;
 }
 
 .nav-links {
@@ -162,16 +169,16 @@ a {
 
 /* FOOTER SECTION */
 .site-footer {
-  background-color: #1E293B;
   color: #CBD5E1; /* Slate 300 */
   padding: 40px 60px;
+  background-color: #1E293B;
   align-items: flex-start;
   margin-top: 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
-  border-top: 1px solid #64748B;
+  border-top: 1px solid #f1f5f934;
 }
 
 .footer-left,
