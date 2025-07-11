@@ -3,7 +3,6 @@
 A full-stack **URL Shortening Web Application** that lets users generate short links, track clicks, and manage their personalized dashboard. Built with **Node.js**, **Express**, **MongoDB**, and **Handlebars**, and deployed using **Docker** and **Kubernetes**.
 
 ---
-
 ## 🚀 Features
 
 - 🔐 **User Authentication** (Sign up / Log in / Logout)
@@ -105,10 +104,17 @@ url-shortner-k8s/
 ---
 
 ## 📸 Screenshots
-![Dashboard Screenshot](public/img/kube1.png)
-![Dashboard Screenshot](public/img/kube2.png)
-![Dashboard Screenshot](public/img/kube3.png)
-![Dashboard Screenshot](public/img/kube4.png)
+### Home Page 
+![Home Screenshot](public/img/kube1.png)
+
+### Result
+![Result Screenshot](public/img/kube2.png)
+
+### Dashboard (Shorten)
+![Dashboard Shorten Screenshot](public/img/kube3.png)
+
+### Dashboard (Table)
+![Dashboard Table Screenshot](public/img/kube4.png)
 
 
 ---
