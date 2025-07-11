@@ -4,6 +4,13 @@ import { nanoid } from 'nanoid';
 
 const router = express.Router();
 
+// router.use((req, res, next) => {
+//   if (!req.session.user) {
+//     return res.status(403).render('login', { error: 'Please log in' });
+//   }
+//   next();
+// });
+
 router.get('/', (req, res) => {
   res.render('home',{
         title:"Home",
@@ -11,7 +18,12 @@ router.get('/', (req, res) => {
   });
 });
 
-router.post('/shorten', async (req, res) => {
+router.post("/shorten", (req, res, next) => {
+  if (!req.session.user) {
+    return res.redirect("/login");
+  }
+  next();
+    }, async (req, res) => {
     const { longUrl } = req.body;
 
     if (!longUrl) {

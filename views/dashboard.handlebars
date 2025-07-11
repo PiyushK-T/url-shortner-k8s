@@ -8,15 +8,19 @@
         </ul>
     </aside>
     <section class="dashboard-main">
-        <div id="view-shorten" class="dashboard-view active">
+        <div id="view-shorten" class="dashboard-view ">
             <form method="POST" action="/shorten" class="user-form">
                 <label for="longUrl">SHORTEN URL</label>
                 <p>PASTE YOUR URL HERE</p>
                 <input type="url" name="longUrl" id="longUrl" placeholder="https://example.com" required>
-                <button type="submit" class="shorten-btn">SHORTEN AND SAVE</button>            
+                <button type="submit" class="dashboard-shorten-btn">SHORTEN AND SAVE</button>            
             </form>
         </div>
-        <div id="view-links" class="dashboard-view">
+
+{{!-- change active from links to shorten later after testing --}}
+
+        <div id="view-links" class="dashboard-view active">
+            
             <h2 class="heading-secondary-dashboard">YOUR SAVED LINKS</h2>
             <table class="link-table">
                 <thead>

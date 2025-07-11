@@ -52,6 +52,7 @@ a {
   /* background-color: #F59E0B; Amber */
   padding: 20px 30px;
   flex-wrap: wrap;
+  border-bottom: 1px solid #131a25;
 }
 
 .logo img {
@@ -178,7 +179,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
-  border-top: 1px solid #f1f5f934;
+  border-top: 1px solid #131a25;
 }
 
 .footer-left,

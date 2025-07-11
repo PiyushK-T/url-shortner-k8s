@@ -3,6 +3,16 @@ import exphbs from "express-handlebars";
 const app = express();
 import configRoutes from './routes/index.js';
 
+import session from 'express-session';
+
+app.use(session({
+  name: 'AuthCookie',
+  secret: 'your_secret_key',
+  resave: false,
+  saveUninitialized: true
+}));
+
+
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 

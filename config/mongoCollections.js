@@ -11,5 +11,6 @@ export const getCollection = async (collectionName) => {
 };
 
 const urlCollection = await getCollection("urls");
+const userCollection = await getCollection("users");
 
-export { urlCollection };
+export { urlCollection, userCollection };

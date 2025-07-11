@@ -1,12 +1,20 @@
 .dashboard-container{
-    display: flex;
-    min-height: calc(100vh-80vh);
+  display: flex;
+  min-height: 120%;
+}
+
+.dashboard-view {
+  display: none;
+}
+
+.dashboard-view.active {
+  display: block;
 }
 
 .sidebar{
-    padding: 2%;
+    /* padding: 2%; */
     margin-right: 5%;
-    width: 250px;
+    width: 270px;
     height:inherit;
     background-color: #131a25;
     color: #F1F5F9;
@@ -14,9 +22,12 @@
     flex-direction: column;
 }
 
-.sidebar-title{
-    font-size: 20px;
-    margin-bottom: 30px;
+.sidebar-title,
+.heading-secondary-dashboard{
+    font-size: 30px;
+    padding: 20px;
+    /* margin-left: 5%; */
+    align-self: center;
     color: #F97316;
 }
 
@@ -25,36 +36,68 @@
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 0s;
 }
 
 .menu-link{
+    display: block;
+    padding: 15px 20px;
     text-decoration: none;
     color: #F1F5F9;
     font-size: 16px;
-    transition: color 0.3s;
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid #475569;
+    border-bottom: 1px solid #475569;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
 }
 
-.menu-link.active,
-.menu-link.hover{
-    color: #0EA5E9;
-    font-weight: bold;
+.menu-link:hover {
+  background-color: #0EA5E9;
+  color: #1F2937;
+  font-weight: bold;
+}
+
+.menu-link.active {
+  background-color: #0284C7;
+  color: #F1F5F9;
+  font-weight: bold;
 }
 
 .logout{
     color: #F97316;
+    transition: color 0.3s;
+    border-top: 1px solid #475569;
+}
+
+.logout:hover{
+    color: #8b420e;
+}
+
+.dashboard-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #1E293B;
+  /* gap: 20px; */
 }
 
 /* FORM SECTION */
 .user-form {
   background-color: #334155; /* Slate 700 */
-  width: 90%;
-  max-width: 700px;
-  margin: 100px 0 40px 350px;
-  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  /* margin: 100px 0 40px 350px; */
+  padding: 70px;
   border-radius: 15px;
+  margin-left: -10%;
+  margin-bottom: 20%;
   /* max-height: 400px; */
-  height: 100%;
+  height: 120%;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
   /* border: 1px solid #64748B; Slate 500 */
 }
@@ -105,7 +148,6 @@
 .link-table{
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
 }
 
 .link-table th,
