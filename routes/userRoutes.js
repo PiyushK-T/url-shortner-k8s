@@ -5,9 +5,11 @@ const router = express.Router();
 
 // GET Signup page
 router.get("/signup", (req, res) => {
+  if (req.session.user) return res.redirect("/dashboard");
   res.render("signup", {
     title: "Signup",
     cssPath: "/public/css/user.css",
+    user: req.session.user || null,
   });
 });
 
@@ -45,9 +47,11 @@ router.post("/signup", async (req, res) => {
 
 // GET Login page
 router.get("/login", (req, res) => {
+  if (req.session.user) return res.redirect("/dashboard");
   res.render("login", {
     title: "Login",
     cssPath: "/public/css/user.css",
+    user: req.session.user || null,
   });
 });
 
@@ -60,11 +64,10 @@ router.post("/login", async (req, res) => {
     if (!email || !password) throw "Email and password are required";
 
     const result = await checkUser(email.trim(), password);
-    console.log("checkUser result:", result);
+    // console.log("checkUser result:", result);
     if (result.authenticated) {
-      // req.session.user = { email };
       req.session.user = { 
-        id: result.user._id, 
+        id: result.user._id.toString(), 
         email: result.user.email,
         username: result.user.username
         };
@@ -84,7 +87,7 @@ router.post("/login", async (req, res) => {
 // GET Logout
 router.get("/logout", (req, res) => {
   req.session.destroy(() => {
-    res.redirect("/login");
+    res.redirect("/");
   });
 });
 

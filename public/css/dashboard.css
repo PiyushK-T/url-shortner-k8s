@@ -12,7 +12,6 @@
 }
 
 .sidebar{
-    /* padding: 2%; */
     margin-right: 5%;
     width: 270px;
     height:inherit;
@@ -26,7 +25,6 @@
 .heading-secondary-dashboard{
     font-size: 30px;
     padding: 20px;
-    /* margin-left: 5%; */
     align-self: center;
     color: #F97316;
 }
@@ -83,23 +81,19 @@
   align-items: center;
   padding: 40px;
   background-color: #1E293B;
-  /* gap: 20px; */
+  margin-top: -5%;
 }
 
 /* FORM SECTION */
 .user-form {
-  background-color: #334155; /* Slate 700 */
+  background-color: #334155; 
   width: 100%;
   max-width: 600px;
-  /* margin: 100px 0 40px 350px; */
   padding: 70px;
   border-radius: 15px;
   margin-left: -10%;
   margin-bottom: 20%;
-  /* max-height: 400px; */
   height: 120%;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
-  /* border: 1px solid #64748B; Slate 500 */
 }
 
 .user-form label {
@@ -112,7 +106,7 @@
 
 .user-form p {
   font-size: 18px;
-  color: #CBD5E1; /* Slate 300 */
+  color: #CBD5E1;
   margin-bottom: 10px;
 }
 
@@ -122,7 +116,7 @@
   font-size: 16px;
   border: none;
   border-radius: 10px;
-  background-color: #475569; /* Slate 600 */
+  background-color: #475569; 
   color: #F1F5F9;
   margin-bottom: 20px;
   outline:none;
@@ -133,7 +127,7 @@
   font-size: 16px;
   border: none;
   border-radius: 12px;
-  background-color: #0EA5E9; /* Primary Button */
+  background-color: #0EA5E9;
   color: #1F2937;
   cursor: pointer;
   float: right;
@@ -145,9 +139,56 @@
   color: #F1F5F9;
 }
 
+ .short-url-box {
+  background-color: #334155; 
+  width: 100%;
+  max-width: 600px;
+  padding: 70px;
+  border-radius: 15px;
+  margin-left: -10%;
+  margin-top: -15%;
+}
+.hidden {
+  display: none;
+}
+
+.short-url-box button {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  background-color: #0EA5E9; 
+  color: #1F2937;
+  cursor: pointer;
+  float: right;
+  margin-top: -7%;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.short-url-box button:hover {
+  background-color: #0284C7;
+  color: #F1F5F9;
+}
+
 .link-table{
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.link-table thead {
+  background-color: #475569;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.table-wrapper {
+  max-height: 50vh;
+  overflow-y: auto;
+  border: 1px solid #64748B;
+  border-radius: 10px;
 }
 
 .link-table th,
@@ -155,6 +196,7 @@
     padding: 15px;
     text-align: left;
     border-bottom: 1px solid #475569;
+    text-align: center;
 }
 
 .link-table th{
@@ -166,5 +208,41 @@
 }
 
 .link-table .copy-button{
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  background-color: #0EA5E9; 
+  color: #1F2937;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; 
+}
 
+.link-table .copy-button:hover {
+  background-color: #0284C7;
+  color: #F1F5F9;
+}
+
+.link-table .delete-button{
+ padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  background-color: #e90e0e;
+  color: #F1F5F9;
+  cursor: pointer;
+  transition: background-color 0.3s; 
+}
+
+.link-table .delete-button:hover {
+  background-color: #860808;
+}
+
+.empty-table {
+  text-align: center;
+  padding: 30px;
+  color: #CBD5E1;
+  font-size: 18px;
+  font-style: italic;
+  border-bottom: none;
 }

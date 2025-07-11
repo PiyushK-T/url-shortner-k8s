@@ -6,25 +6,13 @@
     <ul class="nav-links">
 
       {{!-- if logged in --}}
-      {{!-- {{#if user}} --}}
-      {{!-- <li><a href="/dashboard">DASHBOARD</a></li> --}}
-      {{!-- <li><a href="/logout">LOGOUT</a></li> --}}
-      {{!-- {{/if}} --}}
-
-      {{!-- not logged in --}}
-      {{!-- {{#unless user}} --}}
-      {{!-- {{#unless onLoginPage}} --}}
-      <li><a href="/login">LOGIN</a></li>
-      {{!-- {{/unless}} --}}
-
-      {{!-- {{#unless onSignupPage}} --}}
-      {{!-- <div class="signupbutton"> --}}
-      {{!-- <li><a href="/signup">SIGN UP</a></li> --}}
-      <li><a href="/signup" class="signup-btn">SIGNUP</a></li>
-      {{!-- {{/unless}} --}}
-      {{!-- {{/unless}}  --}}
-      {{!-- </div> --}}
+      {{#if user}}
+        <span>WELCOME, {{user.username}}</span>
+        <li><a href="/logout" class="logout-btn">LOGOUT</a></li>
+      {{else}}
+        <li><a href="/login">LOGIN</a></li>
+        <li><a href="/signup" class="signup-btn">SIGN UP</a></li>
+      {{/if}}
     </ul>
   </nav>
-  {{!-- <div id="user-data" data-user='{{{json user}}}'></div> --}}
 </header>

@@ -4,46 +4,55 @@
         <ul class="menu">
             <li><a href="#" class="menu-link active" data-view="shorten">SHORTEN</a></li>
             <li><a href="#" class="menu-link" data-view="links">MY LINKS</a></li>
-            <li><a href="/" class="menu-link logout">LOGOUT</a></li>
         </ul>
     </aside>
     <section class="dashboard-main">
-        <div id="view-shorten" class="dashboard-view ">
-            <form method="POST" action="/shorten" class="user-form">
+        <div id="view-shorten" class="dashboard-view active">
+            <form method="POST" action="/shorten" class="user-form" id="shorten-form">
                 <label for="longUrl">SHORTEN URL</label>
                 <p>PASTE YOUR URL HERE</p>
                 <input type="url" name="longUrl" id="longUrl" placeholder="https://example.com" required>
                 <button type="submit" class="dashboard-shorten-btn">SHORTEN AND SAVE</button>            
             </form>
+            <div id="short-url-result" class="short-url-box hidden">
+                <p>SHORT URL: <a id="short-url" href="#" target="_blank"></a></p>
+                <button id="copy-result-button">COPY</button>
+            </div>
+
         </div>
 
 {{!-- change active from links to shorten later after testing --}}
 
-        <div id="view-links" class="dashboard-view active">
+        <div id="view-links" class="dashboard-view ">
             
             <h2 class="heading-secondary-dashboard">YOUR SAVED LINKS</h2>
-            <table class="link-table">
-                <thead>
-                    <tr>
-                        <th>ORIGINAL LINK</th>
-                        <th>SHORT URL</th>
-                        <th>CLICKS</th>
-                        <th>COPY</th>
-                        <th>DELETE</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {{#each links}}
+            <div class="table-wrapper">
+                <table class="link-table">
+                    <thead>
                         <tr>
-                            <td>{{this.original}}</td>
-                            <td><a href="{{this.short}}"></a></td>
-                            <td>{{this.clicks}}</td>
-                            <td><button class="copy-button">COPY</button></td>
-                            <td><button class="delete-button">DELETE</button></td>
+                            <th>ORIGINAL LINK</th>
+                            <th>SHORT URL</th>
+                            <th>CLICKS</th>
+                            <th>COPY</th>
+                            <th>DELETE</th>
                         </tr>
+                    </thead>
+                    <tbody>
+                        {{#each links}}
+                            <tr>
+                            <td>{{this.original}}</td>
+                                <td><a href="{{this.short}}" target="_blank">{{this.short}}</a></td>
+                                <td>{{this.clicks}}</td>
+                                <td><button class="copy-button" data-link="{{this.short}}">COPY</button></td>
+                                <td><button class="delete-button" data-id="{{this.id}}">DELETE</button></td>
+                            </tr>
+                        {{else}}
+                        {{!-- dynamically remove this when a table is filled --}}
+                            <tr><td colspan="5" class="empty-table">No links found.</td></tr>
                         {{/each}}
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
 </div>

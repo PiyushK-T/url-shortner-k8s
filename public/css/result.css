@@ -1,5 +1,5 @@
 .result {
-  background-color: #334155; /* Slate 700 */
+  background-color: #334155; 
   width: 90%;
   max-width: 700px;
   margin: 200px auto 40px;
@@ -7,8 +7,6 @@
   border-radius: 15px;
   max-height: 330px;
   height: 100%;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
-  /* border: 1px solid #64748B; Slate 500 */
 }
 
 .result h1 {
@@ -21,7 +19,7 @@
 
 .result p {
   font-size: 18px;
-  color: #CBD5E1; /* Slate 300 */
+  color: #CBD5E1;
   margin-bottom: 10px;
 }
 
@@ -38,9 +36,8 @@
     padding: 15px;
     border: none;
     border-radius: 10px;
-    background-color: #475569; /* Slate 600 */
+    background-color: #475569;
     color: #F1F5F9;
-    /* margin-bottom: 20px; */
     outline:none;
     flex: 1;
     text-align: left;
@@ -54,7 +51,7 @@
   font-size: 16px;
   border: none;
   border-radius: 12px;
-  background-color: #0EA5E9; /* Primary Button */
+  background-color: #0EA5E9;
   color: #1F2937;
   cursor: pointer;
   transition: background-color 0.3s;

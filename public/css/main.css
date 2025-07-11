@@ -12,12 +12,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
-  /* background-image: url('/public/img/bg2.svg');
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  background-attachment: fixed; */
 }
 
 main {
@@ -26,8 +20,8 @@ main {
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #1E293B; /* Slate 800 */
-  color: #F1F5F9; /* Slate 100 */
+  background-color: #1E293B; 
+  color: #F1F5F9; 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -49,7 +43,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #F59E0B; Amber */
   padding: 20px 30px;
   flex-wrap: wrap;
   border-bottom: 1px solid #131a25;
@@ -70,14 +63,14 @@ a {
 
 .nav-links li a {
   text-decoration: none;
-  color: #0EA5E9; /* Sky Blue */
+  color: #0EA5E9; 
   font-weight: 500;
   font-size: 16px;
   transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-  color: #F1F5F9; /* White-ish text */
+  color: #F1F5F9; 
 }
 
 .nav-links .signup-btn{
@@ -89,7 +82,6 @@ a {
   border: none;
   border-radius: 10px;
   background-color: #0EA5E9;
-  /* color: black; */
   font-weight: 400;
   cursor: pointer;
   font-size: 16px;
@@ -97,12 +89,31 @@ a {
 }
 
 .nav-links .signup-btn:hover {
-  background-color: #0284C7; /* Sky Blue Hover */
+  background-color: #0284C7;
+}
+
+.nav-links .logout-btn{
+  color: #131a25;
+}
+
+.nav-links .logout-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #F97316;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links .logout-btn:hover {
+  background-color: #77380b;
 }
 
 /* FORM SECTION */
 .home-form {
-  background-color: #334155; /* Slate 700 */
+  background-color: #334155; 
   width: 90%;
   max-width: 700px;
   margin: 200px auto 40px;
@@ -110,8 +121,6 @@ a {
   border-radius: 15px;
   max-height: 270px;
   height: 100%;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
-  /* border: 1px solid #64748B; Slate 500 */
 }
 
 .home-form label {
@@ -124,7 +133,7 @@ a {
 
 .home-form p {
   font-size: 18px;
-  color: #CBD5E1; /* Slate 300 */
+  color: #CBD5E1; 
   margin-bottom: 10px;
 }
 
@@ -134,7 +143,7 @@ a {
   font-size: 16px;
   border: none;
   border-radius: 10px;
-  background-color: #475569; /* Slate 600 */
+  background-color: #475569; 
   color: #F1F5F9;
   margin-bottom: 20px;
   outline:none;
@@ -145,7 +154,7 @@ a {
   font-size: 16px;
   border: none;
   border-radius: 12px;
-  background-color: #0EA5E9; /* Primary Button */
+  background-color: #0EA5E9; 
   color: #1F2937;
   cursor: pointer;
   float: right;
@@ -159,18 +168,18 @@ a {
 
 /* FEEDBACK STYLES */
 .success-message {
-  color: #22C55E; /* Green 500 */
+  color: #22C55E; 
   margin-top: 10px;
 }
 
 .error-message {
-  color: #F97316; /* Orange 500 */
+  color: #F97316; 
   margin-top: 10px;
 }
 
 /* FOOTER SECTION */
 .site-footer {
-  color: #CBD5E1; /* Slate 300 */
+  color: #CBD5E1; 
   padding: 40px 60px;
   background-color: #1E293B;
   align-items: flex-start;

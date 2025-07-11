@@ -16,7 +16,6 @@ app.use(session({
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
-// app.use(express.static('public'));
 const staticDir = express.static("public");
 app.use("/public", staticDir);
 
